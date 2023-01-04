@@ -22,5 +22,8 @@
     "react-dom": "^18.0.0",
     "svelte": "^3.46.4",
     "vue": "^3.2.30"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
   }
 }
