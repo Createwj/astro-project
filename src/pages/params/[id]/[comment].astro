@@ -1,0 +1,15 @@
+---
+const { id, comment } = Astro.params;
+export async function getStaticPaths() {
+
+return [
+  { params: { "id": "abc", "comment": "a-comment" } },
+];
+
+}
+const { slug } = Astro.params;
+---
+
+<div>
+  [id]/[comment] {id} {comment}
+</div>

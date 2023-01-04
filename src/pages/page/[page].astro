@@ -1,0 +1,27 @@
+---
+export async function getStaticPaths({ paginate }) {
+  const astronautPages = [{
+    astronaut: 'Neil Armstrong',
+  }, {
+    astronaut: 'Buzz Aldrin',
+  }, {
+    astronaut: 'Sally Ride',
+  }, {
+    astronaut: 'John Glenn',
+  }];
+  // 将根据宇航员数组生成两个页面
+  return paginate(astronautPages, { pageSize: 2 });
+}
+// 所有分页数据都将传递给 "page" 参数
+const { page } = Astro.props;
+---
+
+<!-- 显示当前页面。也可以使用 Astro.params.page！-->
+<div>
+  {JSON.stringify(page)}
+</div>
+<h1>Page {page.currentPage}</h1>
+<ul>
+  <!-- 列出宇航员信息数组 -->
+  {page.data.map(({ astronaut }) => <li>{astronaut}</li>)}
+</ul>
