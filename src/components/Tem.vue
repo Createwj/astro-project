@@ -8,7 +8,7 @@ onMounted(() => {
 </script>
 <template>
   <div>
-    <h1>{{ tpl }}</h1>
+    <h1 class="text-center">{{ tpl }}</h1>
   </div>
 </template>
 

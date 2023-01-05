@@ -25,6 +25,9 @@
     "vue": "^3.2.30"
   },
   "devDependencies": {
-    "sass": "^1.57.1"
+    "astro-uno": "^0.2.1",
+    "@unocss/astro": "^0.48.0",
+    "sass": "^1.57.1",
+    "unocss": "^0.48.0"
   }
 }
