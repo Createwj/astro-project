@@ -11,6 +11,12 @@
     "astro": "astro"
   },
   "dependencies": {
+    "astro": "^1.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "vue": "^3.2.30"
+  },
+  "devDependencies": {
     "@astrojs/node": "^4.0.0",
     "@astrojs/react": "^1.2.2",
     "@astrojs/rss": "^2.0.0",
@@ -18,16 +24,9 @@
     "@astrojs/vue": "^1.2.2",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
-    "astro": "^1.8.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "svelte": "^3.46.4",
-    "vue": "^3.2.30"
-  },
-  "devDependencies": {
-    "astro-uno": "^0.2.1",
     "@unocss/astro": "^0.48.0",
     "sass": "^1.57.1",
+    "svelte": "^3.46.4",
     "unocss": "^0.48.0"
   }
 }
