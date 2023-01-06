@@ -21,8 +21,8 @@ export default defineConfig({
       ...unoConfig
     })
   ],
-  // output: 'server',
-  // adapter: node({
-  //   mode: 'standalone'
-  // }),
+  output: 'server',
+  adapter: node({
+    mode: 'standalone'
+  }),
 });
