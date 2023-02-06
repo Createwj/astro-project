@@ -1,5 +1,11 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import axios from 'axios'
+
+// axios 请求
+axios.get('/api/getData').then(res => {
+  console.log(res)
+})
 
 let tpl = ref('this is vue components')
 onMounted(() => {
